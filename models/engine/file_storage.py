@@ -56,6 +56,11 @@ class FileStorage:
             pass
 
     def delete(self, obj=None):
+        """_delete_
+
+        Args:
+            obj (_type_, optional): _description_. Defaults to None.
+        """
         if obj is None:
             return
 
