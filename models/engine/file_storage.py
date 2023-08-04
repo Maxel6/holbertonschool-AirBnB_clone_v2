@@ -65,4 +65,4 @@ class FileStorage:
             return
 
         if obj in self.__objects:
-            self.__objects.remove(obj)
+            del(obj)
