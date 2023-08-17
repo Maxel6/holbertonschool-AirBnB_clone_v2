@@ -53,11 +53,13 @@ def odd_even(n):
     """return the partiy of n"""
     if isinstance(n, int):
         if n % 2 == 1:
-            return render_template('6-number_odd_or_even.html', n=n, parity="odd")
+            return render_template('6-number_odd_or_even.html', n=n,
+                                   parity="odd")
         else:
-            return render_template('6-number_odd_or_even.html', n=n, parity="even")
+            return render_template('6-number_odd_or_even.html',
+                                   n=n, parity="even")
     else:
-        abort(404)      
+        abort(404)   
 
 
 if __name__ == '__main__':
