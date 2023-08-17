@@ -43,7 +43,7 @@ def display_int(n):
 def number_template(n):
     """return n to html if it's an integer"""
     if isinstance(n, int):
-        return render_template('5-number.html', number=n)
+        return render_template('5-number.html', n=n)
     else:
         abort(404)
 
